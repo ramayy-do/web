@@ -1,0 +1,115 @@
+/*margin = ruang diluar elemen */
+/*padding = ruang didalam elemen */
+header {
+  background-color: #2e5b9d;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #2e5b9d;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ffce00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.nav-menu {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: inline;
+}
+
+/* Menu links */
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Garis pemisah */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 90%;
+  margin: 30px auto; /*margin = ruang diluar elemen */
+  padding: 40px; /*padding = ruang didalam elemen */
+  background-color: aliceblue;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5%;
+}
+
+.container-header {
+  text-align: center;
+  padding: 32px;
+}
+
+.container-header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.container-header p {
+  flex: 1;
+  font-size: 16px;
+  padding-bottom: 10px;
+  color: #555;
+}
+
+.container-content {
+  font-size: 16px;
+}
+
+.container-content p {
+  color: #555;
+}
+
+/* Kontainer untuk setiap blok konten */
+.content-block {
+  display: flex; /* Mengatur gambar dan teks secara horizontal */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Jarak antara teks dan gambar */
+  margin-bottom: 20px;
+}
+
+/* Teks paragraf */
+.content-block p {
+  flex: 1; /* Paragraf menyesuaikan lebar */
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.content-block img {
+  float: right;
+  max-width: 250px; /* Ukuran gambar yang sesuai */
+  height: auto; /* Menjaga proporsi gambar */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+  margin-left: 20px; /* Memberikan jarak kiri ke teks */
+}
